@@ -20,13 +20,13 @@ public class TestCase {
 		WebDriverManager.chromedriver().setup();
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	@Test
 	public void doLogin()
 	{
 		driver.get("https://gmail.com");
-		driver.findElement(By.id("Email")).sendKeys("nagakowsalya");
+		driver.findElement(By.id("identifierId")).sendKeys("nagakowsalya");
 		
 	}
 	@AfterMethod
