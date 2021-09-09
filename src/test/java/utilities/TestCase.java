@@ -25,7 +25,7 @@ public class TestCase {
 	@Test
 	public void doLogin()
 	{
-		driver.get("gmail.com");
+		driver.get("https://gmail.com");
 		driver.findElement(By.id("Email")).sendKeys("nagakowsalya");
 		
 	}
